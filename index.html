@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Quiz_app.css">
+    <title>Quiz app</title>
+</head>
+<body>
+    <!-- start_btn -->
+    <div class="start_btn">
+        <button class="btn" >Start Quiz</button>
+    </div>
+
+    <!-- Information of the quiz -->
+    <div class="info_box">
+        <div class="info_title">Rules of the Quiz</div>
+        <hr>
+        <div class="info-list">
+            <div class="info">
+                <ol>
+                    <li>You have <span>15 seconds</span> per question</li>
+                    <li>Click an option before the time elapse or it will automatically move to the next question</li>
+                    <li>Once selected an option you can click the next button to move to the next question.</li>
+                    <li>You can't exit once started</li>
+                    <li>You will be scored based on your performance</li>
+                    <li>Input your fullname </li>
+                    <li>Click continue to proceed with quiz</li>
+                </ol>
+                <form name="myForm" >
+                    <label for="fname"  >Fullname:</label>
+                    <input type="text" class="text" id="text">
+                </form>
+                <button class="exit_btn">Exit</button>
+                <button class="continue_btn">Contine</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz box -->
+    <div class="quiz_box">
+        <header id="quiz_head">
+            <div class="title">Answer the following questions</div>
+            <div class="timer">
+                <div class="timer_text">Time Left</div><span><b>:</b></span>
+                <div class="timer_second "></div>
+            </div>
+            <div class="time_line"></div>
+           
+        </header>
+        
+        <section >
+            <div class="question_text">
+                <!-- 1 <span>What is your Name?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Yusuf</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Musa</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hamza</span>
+                </div>
+                <div class="option">
+                    <span>Nathaniel</span>
+                </div> -->
+            
+            </div>
+        </section>
+
+
+
+        <div class="footer">
+            <div class="question_counter">
+                <!-- <span>1</span> of <span>10</span> -->
+            </div>
+            <button class="next_btn" style="vertical-align:middle"><span>Next</span>  </button>
+        </div>
+    </div>
+
+
+    <!-- the result of thw quiz -->
+
+    <div class="result_box">
+        <div class="icon">
+            <span>&#128512;</span>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div id="score_text">
+        
+        </div>
+        <div class="buttons">
+            <button class="restart_btn">Replay Quiz</button>
+            <button class="quit_btn">Quit Quiz</button>
+        
+        </div>
+    </div>
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
