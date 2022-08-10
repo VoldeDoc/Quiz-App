@@ -139,7 +139,8 @@
 
 @media(max-width:600px) {
   .quiz_box{
-    width:400px;
+    width:445px;
+    height:400px;
   }
 }
 

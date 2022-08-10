@@ -235,7 +235,7 @@ function startTimeLine(time) {
    counterLine = setInterval( ()=>{
     time += 1;
     timer_line.style.width = time + 'px';
-    if (time > 600) {
+    if (time > 445) {
         clearInterval(counterLine)
     }
    },27)
