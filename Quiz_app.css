@@ -1,9 +1,9 @@
+/* 
+ body{
+  background-image: url(pic1.jpg) ;
+  background-size:auto;
 
-body{
-  background-image: url(pic1.jpg);
-  overflow: hidden;
-
-}
+}  */
 /* positiion for button info box result and quiz box */
 .start_btn,.info_box,.quiz_box,.result_box{
     position: absolute;
@@ -45,18 +45,24 @@ body{
 /* Information if the quiz */
 .info_box{
     padding:20px 20px;
-    width: 60%;
+    width: 600px;
     text-align: center;
     background-color: mediumslateblue;
     box-shadow: 10px 14px 4px #aaaaaa;
     border: none;
     border-radius: 4px;
-    height: 65%;
     transition: all 1s ease-in-out;
     opacity:0;
     pointer-events: none;
-
 }
+
+
+@media(max-width:600px) {
+  .info_box{
+    width:400px;
+  }
+}
+
 .info_box .info_title{
     color: rgb(255, 0, 85);
     font-size: 40px;
@@ -129,6 +135,12 @@ body{
   pointer-events: none;
   opacity: 0;
   transition: all 0.3s ease-in;
+}
+
+@media(max-width:600px) {
+  .quiz_box{
+    width:400px;
+  }
 }
 
 .quiz_box header{
@@ -341,6 +353,12 @@ body{
     pointer-events: none;
     opacity:0;
    }
+   
+@media(max-width:600px) {
+  .result_box{
+    width:400px;
+  }
+}
   .result_box .icon span{
     font-size: 100px;
   }  
