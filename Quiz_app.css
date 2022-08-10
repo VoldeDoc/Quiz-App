@@ -45,7 +45,7 @@
 /* Information if the quiz */
 .info_box{
     padding:20px 20px;
-    width: 600px;
+    width: 500px;
     text-align: center;
     background-color: mediumslateblue;
     box-shadow: 10px 14px 4px #aaaaaa;
@@ -128,8 +128,8 @@
 /* Quiz box */
 .quiz_box{
   background-color: rgb(164, 151, 209);
-  width: 600px;
-  height: 550px;
+  width: 500px;
+  height: 500px;
   padding: 15px;
   margin: 4px;
   pointer-events: none;
@@ -140,7 +140,7 @@
 @media(max-width:600px) {
   .quiz_box{
     width:445px;
-    height:400px;
+    height: 400px;
   }
 }
 
@@ -358,6 +358,7 @@
 @media(max-width:600px) {
   .result_box{
     width:400px;
+    height: 400px;
   }
 }
   .result_box .icon span{
